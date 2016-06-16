@@ -6,13 +6,13 @@ $(document).ready(function() {
 
     foods.forEach(function(food) {
       userInput.push($("input#" + food).val());
-
-      // userInput.sort();
-      // var userList = userInput.toString();
-      // userList.toUpperCase();
-      // $("ul#grocery-list").append(userInput);
       });
-    alert(userInput);
+
+    userInput.sort();
+    var userList = userInput.toString();
+    var finalList = userList.toUpperCase();
+    $("ul#grocery-list").append(finalList);
+
     event.preventDefault();
 
   });
