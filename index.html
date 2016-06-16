@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS Styling -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.2.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grocery List</h1>
+      <div class="form-area">
+        <form id="groceries">
+          <h3>What do you need to pick up today?</h3>
+          <div class="form-group">
+            <input type="text" class="form-control" id="food1" placeholder="Delicious food">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="food2" placeholder="More food">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="food3" placeholder="Still hungry">
+          </div>
+          <input class="btn btn-danger" type="submit" value="Show me my list">
+        </form>
+      </div>
+      <div class="results">
+        <ul id="grocery-list">
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
